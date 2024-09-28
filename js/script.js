@@ -1,11 +1,11 @@
 // Datos de usuario válidos para login
 const loginData = {
-    username: 'slakeman',
-    password: 'andres'
+    username: 'admin',
+    password: '1234'
 };
 
-// Validar el login
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+// Validar el login en index.html
+document.getElementById('loginForm')?.addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar envío por defecto
 
     const enteredUsername = document.getElementById('username').value;
@@ -25,26 +25,7 @@ if (document.getElementById('personalDataForm')) {
     document.getElementById('personalDataForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Evitar el envío por defecto
 
-        const fullName = document.getElementById('fullName').value;
-        const idNumber = document.getElementById('idNumber').value;
-        const nationality = document.getElementById('nationality').value;
-        const birthDate = document.getElementById('birthDate').value;
-        const address = document.getElementById('address').value;
-        const phoneNumber = document.getElementById('phoneNumber').value;
-
-        // Validación básica
-        if (!fullName || !idNumber || !nationality || !birthDate || !address || !phoneNumber) {
-            alert('Por favor, completa todos los campos.');
-            return;
-        }
-
-        // Mostrar los datos (aquí puedes enviar los datos a un servidor si lo deseas)
-        alert(`Datos registrados correctamente:\n` +
-              `Nombre: ${fullName}\n` +
-              `CC: ${idNumber}\n` +
-              `Nacionalidad: ${nationality}\n` +
-              `Fecha de nacimiento: ${birthDate}\n` +
-              `Dirección: ${address}\n` +
-              `Teléfono: ${phoneNumber}`);
+        // Redirigir a la página de éxito
+        window.location.href = 'ok.html';
     });
 }

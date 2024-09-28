@@ -167,3 +167,24 @@ button.btn:hover {
     background-color: #4a69bd;
 }
 
+.ok-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a89cc, #b8e994);
+}
+
+.ok-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
