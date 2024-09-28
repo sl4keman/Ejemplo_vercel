@@ -89,3 +89,81 @@ button.btn:hover {
 .forgot-password a:hover {
     color: #4a69bd;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6a89cc; /* Fondo degradado */
+    background: linear-gradient(to right, #6a89cc, #b8e994);
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.register-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: #f7f7f7;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
+    border-bottom-color: #6a89cc;
+}
+
+button.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #6a89cc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #4a69bd;
+}
+
